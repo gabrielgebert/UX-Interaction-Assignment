@@ -20,12 +20,24 @@
     device-orientation-permission-ui="enabled: false" id="scene">
     <a-assets>
       <a-asset-item id="sunModel" src="./Models/sun/scene.gltf"></a-asset-item>
+      <a-asset-item id="mercuryModel" src="./Models/mercury/scene.gltf"></a-asset-item>
+      <a-asset-item id="venusModel" src="./Models/venus/scene.gltf"></a-asset-item>
+      <a-asset-item id="earthModel" src="./Models/earth/scene.gltf"></a-asset-item>
+      <a-asset-item id="moonModel" src="./Models/moon/scene.gltf"></a-asset-item>
+      <a-asset-item id="marsModel" src="./Models/mars/scene.gltf"></a-asset-item>
+      <a-asset-item id="jupiterModel" src="./Models/jupiter/scene.gltf"></a-asset-item>
+      <a-asset-item id="saturnModel" src="./Models/saturn/scene.gltf"></a-asset-item>
+      <a-asset-item id="uranusModel" src="./Models/uranus/scene.gltf"></a-asset-item>
+      <a-asset-item id="neptuneModel" src="./Models/neptune/scene.gltf"></a-asset-item>
+      <a-asset-item id="solarSystemModel" src="./Models/solar-system/scene.gltf"></a-asset-item>
     </a-assets>
 
     <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;"
       raycaster="far: 10000; objects: .clickable">
     </a-camera>
 
+
+    
     <a-entity mindar-image-target="targetIndex: 0">
 
       <a-entity visible=false id="sun-panel" position="0 0 1">
@@ -33,13 +45,129 @@
           position="0 0.4 0"></a-text>
       </a-entity>
 
-      <a-gltf-model id="sun-model" class="clickable" rotation="0 0 0 " position="0 0 0.5" scale="0.05 0.05 0.05" src="#sunModel"
-        animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
+      <a-gltf-model id="sun-model" class="clickable" rotation="0 0 0 " position="0 0 0.5" scale="0.05 0.05 0.05"
+        src="#sunModel" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
 
     </a-entity>
 
     <a-entity mindar-image-target="targetIndex: 1">
-      <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#bearModel" animation-mixer>
+
+      <a-entity visible=false id="mercury-panel" position="0 0 1">
+        <a-text id="mercury-text" value="Mercúrio" color="black" align="center" width="2"
+          position="0 0.4 0"></a-text>
+      </a-entity>
+
+      <a-gltf-model id="mercury-model" class="clickable" rotation="0 0 0 " position="0 0 0.5" scale="0.05 0.05 0.05"
+        src="#mercuryModel" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
+
+    </a-entity>
+
+    <a-entity mindar-image-target="targetIndex: 2">
+
+      <a-entity visible=false id="venus-panel" position="0 0 1">
+        <a-text id="venus-text" value="Venus" color="black" align="center" width="2"
+          position="0 0.4 0"></a-text>
+      </a-entity>
+
+      <a-gltf-model id="venus-model" class="clickable" rotation="0 0 0 " position="0 0 0.5" scale="0.05 0.05 0.05"
+        src="#venusModel" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
+
+    </a-entity>
+
+    <a-entity mindar-image-target="targetIndex: 3">
+
+      <a-entity visible=false id="earth-panel" position="0 0 1">
+        <a-text id="earth-text" value="Terra" color="black" align="center" width="2"
+          position="0 0.4 0"></a-text>
+      </a-entity>
+
+      <a-gltf-model id="earth-model" class="clickable" rotation="0 0 0 " position="0 0 0.5" scale="0.05 0.05 0.05"
+        src="#earthModel" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
+
+    </a-entity>
+
+    <a-entity mindar-image-target="targetIndex: 4">
+
+      <a-entity visible=false id="moon-panel" position="0 0 1">
+        <a-text id="moon-text" value="Lua" color="black" align="center" width="2"
+          position="0 0.4 0"></a-text>
+      </a-entity>
+
+      <a-gltf-model id="moon-model" class="clickable" rotation="0 0 0 " position="0 0 0.5" scale="0.05 0.05 0.05"
+        src="#moonModel" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
+
+    </a-entity>
+
+    <a-entity mindar-image-target="targetIndex: 5">
+
+      <a-entity visible=false id="mars-panel" position="0 0 1">
+        <a-text id="mars-text" value="Marte" color="black" align="center" width="2"
+          position="0 0.4 0"></a-text>
+      </a-entity>
+
+      <a-gltf-model id="mars-model" class="clickable" rotation="0 0 0 " position="0 0 0.5" scale="0.05 0.05 0.05"
+        src="#marsModel" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
+
+    </a-entity>
+
+    <a-entity mindar-image-target="targetIndex: 6">
+
+      <a-entity visible=false id="jupiter-panel" position="0 0 1">
+        <a-text id="jupiter-text" value="Júpiter" color="black" align="center" width="2"
+          position="0 0.4 0"></a-text>
+      </a-entity>
+
+      <a-gltf-model id="jupiter-model" class="clickable" rotation="0 0 0 " position="0 0 0.5" scale="0.05 0.05 0.05"
+        src="#jupiterModel" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
+
+    </a-entity>
+
+    <a-entity mindar-image-target="targetIndex: 7">
+
+      <a-entity visible=false id="saturn-panel" position="0 0 1">
+        <a-text id="saturn-text" value="Saturno" color="black" align="center" width="2"
+          position="0 0.4 0"></a-text>
+      </a-entity>
+
+      <a-gltf-model id="saturn-model" class="clickable" rotation="0 0 0 " position="0 0 0.5" scale="0.05 0.05 0.05"
+        src="#saturnModel" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
+
+    </a-entity>
+
+    <a-entity mindar-image-target="targetIndex: 8">
+
+      <a-entity visible=false id="uranus-panel" position="0 0 1">
+        <a-text id="uranis-text" value="Uranus" color="black" align="center" width="2"
+          position="0 0.4 0"></a-text>
+      </a-entity>
+
+      <a-gltf-model id="uranus-model" class="clickable" rotation="0 0 0 " position="0 0 0.5" scale="0.05 0.05 0.05"
+        src="#uranusModel" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
+
+    </a-entity>
+
+    <a-entity mindar-image-target="targetIndex: 9">
+
+      <a-entity visible=false id="neptune-panel" position="0 0 1">
+        <a-text id="neptune-text" value="Netuno" color="black" align="center" width="2"
+          position="0 0.4 0"></a-text>
+      </a-entity>
+
+      <a-gltf-model id="neptune-model" class="clickable" rotation="0 0 0 " position="0 0 0.5" scale="0.05 0.05 0.05"
+        src="#neptuneModel" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
+
+    </a-entity>
+
+    <a-entity mindar-image-target="targetIndex: 10">
+
+      <a-entity visible=false id="solar-system-panel" position="0 0 1">
+        <a-text id="solar-system-text" value="Sistema Solar" color="black" align="center" width="2"
+          position="0 0.4 0"></a-text>
+      </a-entity>
+
+      <a-gltf-model id="solar-system-model" class="clickable" rotation="0 0 0 " position="0 0 0.5" scale="0.05 0.05 0.05"
+        src="#solarSystemModel" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
+
     </a-entity>
 
   </a-scene>
