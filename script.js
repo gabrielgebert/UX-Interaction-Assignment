@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("DOMContentLoaded");
     const sceneEl = document.querySelector('a-scene');
+    const switchButton = document.getElementById("info-button");
     const sunModel = document.getElementById("sun-model");
     const mercuryModel = document.getElementById("mercury-model");
     const venusModel = document.getElementById("venus-model");
@@ -11,6 +12,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const saturnModel = document.getElementById("saturn-model");
     const uranusModel = document.getElementById("uranus-model");
     const neptuneModel = document.getElementById("neptune-model");
+
+
+
+
+    switchButton.addEventListener("click", () => {
+        const textInfo = document.getElementById('info-div');
+        console.log("click");
+        if (textInfo.getAttribute("visible")){
+            textInfo.setAttribute("visible", false);
+        } else{
+            textInfo.setAttribute("visible", true);
+        }
+
+  });
 
     sunModel.addEventListener("click", () =>{
         console.log("click!")
