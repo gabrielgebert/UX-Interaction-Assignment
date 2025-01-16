@@ -8,19 +8,8 @@
   <script src="./script.js"></script>
 </head>
 
-<body>
-
-  <button class="switch-button" type="button" id="info-button">
-    Mostrar Informações
-  </button>
-
-  <div id="info-div" class="center" align="center">
-    TESTE
-  </div>
-
-
   <a-scene
-    mindar-image="imageTargetSrc: ./targets.mind; uiError:no; uiLoading:no; uiScanning:no;  filterMinCF:0.001; filterBeta: 100; missTolerance: 15;"
+    mindar-image="imageTargetSrc: ./targets.mind; uiError:no; uiLoading:no; uiScanning: #example-scanning-overlay;  filterMinCF:0.001; filterBeta: 100; missTolerance: 15;"
     color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
     device-orientation-permission-ui="enabled: false" id="scene">
     <a-assets>
@@ -48,7 +37,7 @@
         
         value="Our Sun is a 4.5 billion-year-old yellow dwarf star – a hot glowing ball of hydrogen and helium – 
         at the center of our solar system. It’s about 93 million miles (150 million kilometers) from Earth and it’s our solar system’s 
-        only star. Without the Sun’s energy, life as we know it could not exist on our home planet."
+        only star."
 
         color="black" align="center" width="2" position="0.4 0 0"></a-text>
       </a-entity>
@@ -63,11 +52,9 @@
       <a-entity visible=false id="mercury-panel" position="0 0 1">
         <a-text id="mercury-text" 
         
-        value="Mercury's surface temperatures are both extremely hot and cold. Because the planet is so close to 
-        the Sun, day temperatures can reach highs of 800°F (430°C). Without an atmosphere to retain that heat at night, temperatures can dip
-         as low as -290°F (-180°C).
-        Despite its proximity to the Sun, Mercury is not the hottest planet in our solar system – that title belongs to nearby Venus, 
-        thanks to its dense atmosphere. But Mercury is the fastest planet, zipping around the Sun every 88 Earth days." 
+        value="The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon. 
+        From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the 
+        sunlight would be as much as seven times brighter." 
         
         color="black" align="center" width="2" position="0.4 0 0"></a-text>
       </a-entity>
@@ -82,11 +69,8 @@
       <a-entity visible=false id="venus-panel" position="0 0 1">
         <a-text id="venus-text" 
         
-        value="Venus is the second planet from the Sun, and Earth's closest planetary neighbor. Venus is the third brightest object in 
-        the sky after the Sun and Moon. Venus spins slowly in the opposite direction from most planets.
-        Venus is similar in structure and size to Earth, and is sometimes called Earth's evil twin. Its thick atmosphere traps heat 
-        in a runaway greenhouse effect, making it the hottest planet in our solar system with surface temperatures hot enough to melt lead.
-        Below the dense, persistent clouds, the surface has volcanoes and deformed mountains."
+        value="Venus is the second planet from the Sun, and our closest planetary neighbor. It's the hottest planet in our solar system, 
+        and is sometimes called Earth's twin."
         
         color="black" align="center" width="2" position="0.4 0 0"></a-text>
       </a-entity>
@@ -99,13 +83,9 @@
     <a-entity mindar-image-target="targetIndex: 3">
 
       <a-entity visible=false id="earth-panel" position="0 0 1">
-        <a-text id="earth-text" value="While Earth is only the fifth largest planet in the solar system, it is the only world in our 
-        solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets 
-        closest to the Sun, all of which are made of rock and metal.
+        <a-text id="earth-text" value="Earth – our home planet – is the third planet from the Sun, and the fifth largest planet. It's the only place we know of inhabited by living things.
 
-        Earth is the only planet in the solar system whose English name does not come from Greek or Roman mythology. 
-        The name was taken from Old English and Germanic. It simply means &quot;the ground&quot; There are, of course, many names for our planet 
-        in the thousands of languages spoken by the people of the third planet from the Sun." 
+        " 
         
         
         color="black" align="center" width="2" position="0.4 0 0"></a-text>
@@ -121,10 +101,8 @@
       <a-entity visible=false id="moon-panel" position="0 0 1">
         <a-text id="moon-text" 
         
-        value="The Moon makes Earth more livable by moderating our home planet's wobble on its axis, leading to a 
-        relatively stable climate. It also causes tides, creating a rhythm that has guided humans for thousands of years.
-        The Moon rotates exactly once each time it orbits our planet.        
-        Observers on Earth can track the Moon's motion in space (relative to Earth and the Sun) through moon phases, supermoons and eclipses." 
+        value="From lighting up our skies to maintaining a geological record of our solar system’s history, Earth’s closest celestial neighbor plays a pivotal role in the study of our planet and our solar system. 
+        " 
         
         color="black" align="center" width="2" position="0.4 0 0"></a-text>
       </a-entity>
@@ -139,15 +117,7 @@
       <a-entity visible=false id="mars-panel" position="0 0 1">
         <a-text id="mars-text" 
         
-        value="Mars is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to roam 
-        the alien landscape. NASA missions have found lots of evidence that Mars was much wetter and warmer, with a thicker atmosphere, 
-        billions of years ago.
-
-        Mars was named by the Romans for their god of war because its reddish color was reminiscent of blood. 
-        The Egyptians called it &quot;Her Desher,&quot; meaning &quot;the red one.&quot;
-        
-        Even today, it is frequently called the &quot;Red Planet&quot; because iron minerals in the Martian dirt oxidize, or rust, 
-        causing the surface to look red." 
+        value="Mars – the fourth planet from the Sun – is a dusty, cold, desert world with a very thin atmosphere. This dynamic planet has seasons, polar ice caps, extinct volcanoes, canyons and weather." 
         
         color="black" align="center" width="2" position="0.4 0 0"></a-text>
       </a-entity>
@@ -162,13 +132,7 @@
       <a-entity visible=false id="jupiter-panel" position="0 0 1">
         <a-text id="jupiter-text" 
         
-        value="Jupiter's signature stripes and swirls are actually cold, windy clouds of ammonia and water, floating in an atmosphere 
-        f hydrogen and helium. The dark orange stripes are called belts, while the lighter bands are called zones, and they flow east 
-        and west in opposite directions. Jupiter’s iconic Great Red Spot is a giant storm bigger than Earth that has raged for hundreds 
-        of years.
-
-        The king of planets was named for Jupiter, king of the gods in Roman mythology. Most of its moons are also named for mythological 
-        characters, figures associated with Jupiter or his Greek counterpart, Zeus." 
+        value="Jupiter is a world of extremes. It's the largest planet in our solar system – if it were a hollow shell, 1,000 Earths could fit inside. It's also the oldest planet, forming from the dust and gases left over from the Sun's formation 4.6 billion years ago. But it has the shortest day in the solar system, taking about 9.9 hours to spin around once on its axis." 
         
         color="black" align="center" width="2" position="0.4 0 0"></a-text>
       </a-entity>
@@ -183,11 +147,7 @@
       <a-entity visible=false id="saturn-panel" position="0 0 1">
         <a-text id="saturn-text" 
         
-        value="Like fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium. Saturn is not the only planet 
-        to have rings, but none are as spectacular or as complex as Saturn's. Saturn also has dozens of moons.
-
-        From the jets of water that spray from Saturn's moon Enceladus to the methane lakes on smoggy Titan, the Saturn system is a 
-        rich source of scientific discovery and still holds many mysteries." 
+        value="Saturn is the sixth planet from the Sun, and the second-largest planet in our solar system." 
         
         color="black" align="center" width="2" position="0.4 0 0"></a-text>
       </a-entity>
@@ -202,13 +162,9 @@
       <a-entity visible=false id="uranus-panel" position="0 0 1">
         <a-text id="uranus-text" 
         
-        value="Uranus is a very cold and windy world. The ice giant is surrounded by 13 faint rings and 28 small moons. Uranus rotates 
-        at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin sideways, orbiting the Sun 
-        like a rolling ball.
+        value="Uranus is the seventh planet from the Sun, and it has the third largest diameter of planets in our solar system. Uranus appears to spin sideways.
 
-        Uranus was the first planet found with the aid of a telescope. It was discovered in 1781 by astronomer William Herschel, 
-        although he originally thought it was either a comet or a star. It was two years later that the object was universally accepted 
-        as a new planet, in part because of observations by astronomer Johann Elert Bode." 
+        " 
         
         color="black" align="center" width="2" position="0.4 0 0"></a-text>
       </a-entity>
@@ -223,12 +179,7 @@
       <a-entity visible=false id="neptune-panel" position="0 0 1">
         <a-text id="neptune-text" 
         
-        value="Dark, cold, and whipped by supersonic winds, ice giant Neptune is more than 30 times as far from the Sun as Earth. 
-        Neptune is the only planet in our solar system not visible to the naked eye. In 2011 Neptune completed its first 165-year orbit 
-        since its discovery in 1846.
-
-        Neptune is so far from the Sun that high noon on the big blue planet would seem like dim twilight to us. The warm light we see 
-        here on our home planet is roughly 900 times as bright as sunlight on Neptune." 
+        value="Neptune is the eighth and most distant planet in our solar system.        " 
         
         color="black" align="center" width="2" position="0.4 0 0"></a-text>
       </a-entity>
@@ -243,11 +194,7 @@
       <a-entity visible=false id="solar-system-panel" position="0 0 1">
         <a-text id="solar-system-text" 
         
-        value="Our solar system includes the Sun, eight planets, five officially named dwarf planets, hundreds of moons, and thousands of 
-        asteroids and comets. Our solar system is located in the Milky Way, a barred spiral galaxy with two major arms, and two minor arms. 
-        Our Sun is in a small, partial arm of the Milky Way called the Orion Arm, or Orion Spur, between the Sagittarius and Perseus arms. 
-        Our solar system orbits the center of the galaxy at about 515,000 mph (828,000 kph). It takes about 230 million years to complete 
-        one orbit around the galactic center." 
+        value="Our solar system includes the Sun, eight planets, five officially named dwarf planets, hundreds of moons, and thousands of asteroids and comets. Our solar system is located in the Milky Way, a barred spiral galaxy with two major arms, and two minor arms. " 
         
         color="black" align="center" width="2" position="0.4 0 0"></a-text>
       </a-entity>

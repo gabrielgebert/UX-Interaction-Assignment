@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("DOMContentLoaded");
     const sceneEl = document.querySelector('a-scene');
-    const switchButton = document.getElementById("info-button");
     const sunModel = document.getElementById("sun-model");
     const mercuryModel = document.getElementById("mercury-model");
     const venusModel = document.getElementById("venus-model");
@@ -11,127 +10,113 @@ document.addEventListener("DOMContentLoaded", function () {
     const jupiterModel = document.getElementById("jupiter-model");
     const saturnModel = document.getElementById("saturn-model");
     const uranusModel = document.getElementById("uranus-model");
-    const neptuneModel = document.getElementById("neptune-model");
+    const neptuneModel = document.getElementById("neptune-model"); 
 
-
-
-
-    switchButton.addEventListener("click", () => {
-        const textInfo = document.getElementById('info-div');
-        console.log("click");
-        if (textInfo.getAttribute("visible")){
-            textInfo.setAttribute("visible", false);
-        } else{
-            textInfo.setAttribute("visible", true);
-        }
-
-  });
-
-    sunModel.addEventListener("click", () =>{
+    sunModel.addEventListener("click", () => {
         console.log("click!")
         const sunPanel = document.getElementById("sun-panel");
-        if (sunPanel.getAttribute("visible")){
+        if (sunPanel.getAttribute("visible")) {
             sunPanel.setAttribute("visible", false);
-        } else{
+        } else {
             sunPanel.setAttribute("visible", true);
         }
 
     });
 
-    mercuryModel.addEventListener("click", () =>{
+    mercuryModel.addEventListener("click", () => {
         console.log("click!")
         const mercuryPanel = document.getElementById("mercury-panel");
-        if (mercuryPanel.getAttribute("visible")){
+        if (mercuryPanel.getAttribute("visible")) {
             mercuryPanel.setAttribute("visible", false);
-        } else{
+        } else {
             mercuryPanel.setAttribute("visible", true);
         }
 
     });
 
-    venusModel.addEventListener("click", () =>{
+    venusModel.addEventListener("click", () => {
         console.log("click!")
         const venusPanel = document.getElementById("venus-panel");
-        if (venusPanel.getAttribute("visible")){
+        if (venusPanel.getAttribute("visible")) {
             venusPanel.setAttribute("visible", false);
-        } else{
+        } else {
             venusPanel.setAttribute("visible", true);
         }
 
     });
 
-    earthModel.addEventListener("click", () =>{
+    earthModel.addEventListener("click", () => {
         console.log("click!")
         const earthPanel = document.getElementById("earth-panel");
-        if (earthPanel.getAttribute("visible")){
+        if (earthPanel.getAttribute("visible")) {
             earthPanel.setAttribute("visible", false);
-        } else{
+        } else {
             earthPanel.setAttribute("visible", true);
         }
 
     });
 
-    moonModel.addEventListener("click", () =>{
+    moonModel.addEventListener("click", () => {
         console.log("click!")
         const moonPanel = document.getElementById("moon-panel");
-        if (moonPanel.getAttribute("visible")){
+        if (moonPanel.getAttribute("visible")) {
             moonPanel.setAttribute("visible", false);
-        } else{
+        } else {
             moonPanel.setAttribute("visible", true);
         }
 
     });
 
-    marsModel.addEventListener("click", () =>{
+    marsModel.addEventListener("click", () => {
         console.log("click!")
         const marsPanel = document.getElementById("mars-panel");
-        if (marsPanel.getAttribute("visible")){
+        if (marsPanel.getAttribute("visible")) {
             marsPanel.setAttribute("visible", false);
-        } else{
+        } else {
             marsPanel.setAttribute("visible", true);
         }
 
     });
 
-    jupiterModel.addEventListener("click", () =>{
+    jupiterModel.addEventListener("click", () => {
         console.log("click!")
         const jupiterPanel = document.getElementById("jupiter-panel");
-        if (jupiterPanel.getAttribute("visible")){
+        if (jupiterPanel.getAttribute("visible")) {
             jupiterPanel.setAttribute("visible", false);
-        } else{
+        } else {
             jupiterPanel.setAttribute("visible", true);
         }
 
     });
 
-    saturnModel.addEventListener("click", () =>{
+    saturnModel.addEventListener("click", () => {
         console.log("click!")
         const saturnPanel = document.getElementById("saturn-panel");
-        if (saturnPanel.getAttribute("visible")){
+        if (saturnPanel.getAttribute("visible")) {
             saturnPanel.setAttribute("visible", false);
-        } else{
+        } else {
             saturnPanel.setAttribute("visible", true);
         }
 
     });
 
-    uranusModel.addEventListener("click", () =>{
+    uranusModel.addEventListener("click", () => {
         console.log("click!")
         const uranusPanel = document.getElementById("uranus-panel");
-        if (uranusPanel.getAttribute("visible")){
+        if (uranusPanel.getAttribute("visible")) {
             uranusPanel.setAttribute("visible", false);
-        } else{
+        } else {
             uranusPanel.setAttribute("visible", true);
         }
 
     });
 
-    neptuneModel.addEventListener("click", () =>{
+    neptuneModel.addEventListener("click", () => {
         console.log("click!")
         const neptunePanel = document.getElementById("neptune-panel");
-        if (neptunePanel.getAttribute("visible")){
+        if (neptunePanel.getAttribute("visible")) {
             neptunePanel.setAttribute("visible", false);
-        } else{
+        } else {
             neptunePanel.setAttribute("visible", true);
         }
 
